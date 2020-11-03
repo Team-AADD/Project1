@@ -17,12 +17,15 @@ namespace DbCard.Services.Implementations
         private readonly ICustomerService _customerService;
         private readonly IMapper _mapper;
         private readonly IRepository<CustomersBalance> _customerBalancesRepository;
+        private readonly IRepository<Partner> _partnersRepository;
 
         public DiscountService(
             ICustomerService customerService,
             IMapper mapper,
-            IRepository<CustomersBalance> customerBalancesRepository)
+            IRepository<CustomersBalance> customerBalancesRepository,
+            IRepository<Partner> partnersRepository)
         {
+            _partnersRepository = partnersRepository;
             _customerService = customerService;
             _mapper = mapper;
             _customerBalancesRepository = customerBalancesRepository;
@@ -39,6 +42,10 @@ namespace DbCard.Services.Implementations
                     .Where(p => p.PriceOfDiscount < x.Amount)
                     .Take(1));
             var myDiscounts = await discounts.CreateScrollPaginatedResultAsync<Domain.PremiumDiscount, MyDiscount>(scrollRequest, _mapper);
+            foreach (var discount in myDiscounts)
+            {
+                discount.Logo = (await _partnersRepository.GetById(discount.PartnerId)).Logo;
+            }
             return myDiscounts;
         }
 

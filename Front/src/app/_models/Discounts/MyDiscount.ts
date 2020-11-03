@@ -1,7 +1,8 @@
-export class MyDiscount{
-    id: number;
-    partnerId: number;
-    partnerName: string;
-    discountPercent: number;
-    accumulationPercent: number;
+export class MyDiscount {
+  id: number;
+  logo: string;
+  partnerId: number;
+  partnerName: string;
+  discountPercent: number;
+  accumulationPercent: number;
 }

@@ -8,7 +8,7 @@ namespace DbCard.Domain
     public class Partner : Entity<long>
     {
         public string Name { get; set; }
-        public byte[] Logo { get; set; }
+        public string Logo { get; set; }
         public decimal Rating { get; set; }
         public string Description { get; set; }
         public decimal? BirthdayDiscount { get; set; }

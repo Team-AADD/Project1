@@ -28,6 +28,7 @@ namespace DbCard.Infrastructure
                 var Nomer1 = new Partner()
                 {
                     Name = "N1",
+                    Logo= @"https://nr1.md/public/images/logo.png",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
@@ -178,6 +179,7 @@ namespace DbCard.Infrastructure
                 var Andys = new Partner()
                 {
                     Name = "Andy's",
+                    Logo = @"https://media-cdn.tripadvisor.com/media/photo-s/08/0b/a6/76/andy-s-pizza.jpg",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
@@ -319,6 +321,7 @@ namespace DbCard.Infrastructure
                 var Darwin = new Partner()
                 {
                     Name = "Darwin",
+                    Logo = @"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsuF9XdtjJhrxha1ermhlIhJ8jAGBSlC6lKQ&usqp=CAU",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
@@ -455,6 +458,7 @@ namespace DbCard.Infrastructure
                 var Vizaje_Nica = new Partner()
                 {
                     Name = "Vizaje-Nica",
+                    Logo = @"https://rabota.md/uploads/2018_12_07_14_23_38_logo_fb.png",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
@@ -590,6 +594,7 @@ namespace DbCard.Infrastructure
                 var Patria = new Partner()
                 {
                     Name = "Patria",
+                    Logo= @"https://shoppingmalldova.md/wp-content/uploads/2017/09/PatriaMultiplex-logo.png",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
@@ -707,6 +712,7 @@ namespace DbCard.Infrastructure
                 var Romstal = new Partner()
                 {
                     Name = "Romstal",
+                    Logo= @"https://yt3.ggpht.com/a/AATXAJwKiRcNsSwLTrju9tpiSZE_Vx3_ZECJ2GIbE8ZxnQ=s900-c-k-c0x00ffffff-no-rj",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
@@ -880,6 +886,7 @@ namespace DbCard.Infrastructure
                 var invitro = new Partner()
                 {
                     Name = "Invitro",
+                    Logo = @"https://www.invitro.md/tmp/img/logo.png",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
@@ -1137,6 +1144,7 @@ namespace DbCard.Infrastructure
                 var fidesco = new Partner()
                 {
                     Name = "Fidesco",
+                    Logo= @"https://lh3.googleusercontent.com/proxy/6R27o8cpPQZNw2riIyC1K0bNXcbIb-O0sT8HOoHDO6SgjRmnyqe6uWIH3hdUR3Rp7SF2u9-0p3UfOR2gsMDXzUU7",
                     PremiumDiscounts = new List<PremiumDiscount>()
                     {
                         new PremiumDiscount()
